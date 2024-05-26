@@ -9,9 +9,9 @@ class Corporation extends Model
 {
     use HasFactory;
     
-   
-
-    
+    public function job_hunting_statuses(){
+        return $this->hasMany(JobHuntingStatus::class);
+    }
 
     protected $fillable = [
         'name',
