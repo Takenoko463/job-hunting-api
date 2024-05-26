@@ -44,4 +44,8 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function job_hunting_statuses(){
+        return $this->hasMany(JobHuntingStatus::class);
+    }
 }
