@@ -13,8 +13,7 @@ return new class extends Migration
     {
         Schema::create('corporations', function (Blueprint $table) {
             $table->id();
-            $table->timestamp('created_at')->useCurrent();
-            $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();    
+            $table->timestamps(); 
             $table->string('name');
             $table->string('address');
             $table->string('home_page');

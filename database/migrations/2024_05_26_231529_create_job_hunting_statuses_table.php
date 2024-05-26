@@ -14,8 +14,7 @@ return new class extends Migration
         Schema::create('job_hunting_statuses', function (Blueprint $table) {
             $table->id();
             $table->integer('priority')->default(1);
-            $table->timestamp('created_at')->useCurrent();
-            $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
+            $table->timestamps();
             $table->foreignId('user_id')->constrained()->cascadeOnDelete();
             $table->foreignId('corporation_id')->constrained()->cascadeOnDelete();
             $table->integer('way_id')->default(0);
