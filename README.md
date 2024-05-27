@@ -49,7 +49,7 @@ http://43.207.6.215/api/user/1/job_hunting_statuses
 ## 就活状況登録
 ### path
 ```
-http://127.0.0.1:8000/api/job_hunting_statuses
+http://43.207.6.215/api/job_hunting_statuses
 ```
 ### request
 ```json
@@ -96,7 +96,7 @@ http://127.0.0.1:8000/api/job_hunting_statuses
 ## 就活状況編集
 ### path
 ```
-put http://127.0.0.1:8000/api/job_hunting_statuses/37
+put http://43.207.6.215/api/job_hunting_statuses/37
 ```
 ### request
 ```json
@@ -143,7 +143,7 @@ put http://127.0.0.1:8000/api/job_hunting_statuses/37
 ## 就活状況詳細
 ### path
 ```
-get http://127.0.0.1:8000/api/job_hunting_statuses/11
+get http://43.207.6.215/api/job_hunting_statuses/11
 ```
 ### response
 ```json
@@ -177,7 +177,7 @@ get http://127.0.0.1:8000/api/job_hunting_statuses/11
 ## 就活状況消去
 ### path
 ```
-delete http://127.0.0.1:8000/api/job_hunting_statuses/11
+delete http://43.207.6.215/api/job_hunting_statuses/11
 ```
 
 ## アプリケーションを作成した背景
