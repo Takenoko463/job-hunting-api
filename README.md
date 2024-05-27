@@ -4,7 +4,7 @@
 就活状況をまとめるwebアプリのバックエンド側です。
 
 # webサイト
-まだ、deployしておりません。
+http://43.207.6.215/api/user/1/job_hunting_statuses
 
 # 利用方法
 
