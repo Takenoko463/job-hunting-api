@@ -179,7 +179,38 @@ get http://43.207.6.215/api/job_hunting_statuses/11
 ```
 delete http://43.207.6.215/api/job_hunting_statuses/11
 ```
+## ユーザー登録
+```
+POST            http://43.207.6.215/api/register
+```
+```json
+{
+    "name": "tester",
+    "email": "test@example.com",
+    "password": "password",
+    "password_confirmation": "password"
+}
 
+```
+
+# ユーザーログイン
+```
+POST            http://43.207.6.215/api/login
+```
+```json
+{
+    "email": "test@example.com",
+    "password": "password"
+}
+
+```
+# ユーザーログアウト
+```
+POST            http://43.207.6.215/api/logout
+```
+```
+HEADER Authorization: Bearer {access_token}
+```
 ## アプリケーションを作成した背景
 このアプリケーションを作成した背景は私自身の就活進捗を共有しやすくするためです。google spread sheetではスマホから見にくいと家族から苦情をもらいました。また、他のアプリを用いるためにはログインを必要とするため共有に向きません。そこで、このアプリを作成しテックキャンプのキャリア相談担当者と自分の家族に就活の状況を伝えやすくしようと考えています。
 
